@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowCraft | Strategic Business Proposal 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --brand-primary: #3b82f6;
+            --brand-dark: #0f172a;
+            --brand-accent: #06b6d4;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fafafa;
+            color: #334155;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem 1.5rem;
+            position: relative;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .kicker {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--brand-primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-radius: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brand-primary);
+        }
+        .btn-main {
+            background: var(--brand-dark);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .btn-main:hover {
+            background: var(--brand-primary);
+            transform: scale(1.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .page-number {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-family: 'Outfit';
+            font-weight: 700;
+            color: #cbd5e1;
+            font-size: 0.875rem;
+        }
+        /* Floating Shape for Executive Summary */
+        .statement-box {
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+            overflow: hidden;
+        }
+        .statement-shape {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: #3b82f6;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 01 HERO -->
+    <section id="p1" class="section-container bg-slate-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <span class="kicker">Proposal v1.0</span>
+            <h1 class="text-6xl md:text-8xl font-black text-slate-900 mb-6 leading-tight">
+                FLOW<span class="gradient-text">CRAFT</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-500 mb-12 font-light italic">"Simplify. Automate. Scale."</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#p2" class="btn-main">View Strategy <i data-lucide="chevron-down"></i></a>
+            </div>
+        </div>
+        <div class="page-number">01</div>
+    </section>
+
+    <!-- 02 EXECUTIVE SUMMARY -->
+    <section id="p2" class="section-container bg-white">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker">The Vision</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 uppercase">Executive Summary</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <p class="text-lg text-slate-600 leading-relaxed font-light">
+                        Malaysia is undergoing a massive shift towards <strong>Digital Transformation</strong>. Most SMEs still depend heavily on WhatsApp and manual spreadsheets, creating a gap that <strong>FlowCraft</strong> is designed to bridge.
+                    </p>
+                    
+                    <!-- Redesigned Statement Box -->
+                    <div class="statement-box p-8 rounded-[2.5rem] border border-blue-100 shadow-sm relative">
+                        <div class="statement-shape"></div>
+                        <div class="flex items-start gap-5 relative z-10">
+                            <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shrink-0 text-white shadow-lg shadow-blue-200">
+                                <i data-lucide="cpu" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-slate-900 leading-tight mb-2">The FlowCraft Way</p>
+                                <p class="text-base text-blue-600 font-semibold leading-relaxed">
+                                    "We don't just build IT; we simplify operations and implement practical AI for results-oriented growth."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-10 bg-blue-50 rounded-[2.5rem] border border-blue-100">
+                    <h4 class="font-bold text-blue-900 mb-6 uppercase text-sm tracking-widest">Core Focus Areas:</h4>
+                    <ul class="space-y-4 text-slate-700 font-medium">
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i data-lucide="check" class="text-blue-600 w-4 h-4"></i></div>
+                            BPI (Process Improvement)
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i data-lucide="check" class="text-blue-600 w-4 h-4"></i></div>
+                            Workflow Automation
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i data-lucide="check" class="text-blue-600 w-4 h-4"></i></div>
+                            Practical AI Adoption
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i data-lucide="check" class="text-blue-600 w-4 h-4"></i></div>
+                            Data & Dashboards
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">02</div>
+    </section>
+
+    <!-- 03 THE PROBLEM -->
+    <section id="p3" class="section-container bg-slate-50">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker text-red-500">The Context</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase">The Manual Crisis</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 glass-card border-l-4 border-l-red-400">
+                    <h4 class="font-bold text-slate-800 mb-3 uppercase text-sm">Manual Fatigue</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Over-reliance on human memory and scattered WhatsApp messages for critical data.</p>
+                </div>
+                <div class="p-8 glass-card border-l-4 border-l-red-400">
+                    <h4 class="font-bold text-slate-800 mb-3 uppercase text-sm">Data Isolation</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Information locked in spreadsheets that don't talk to each other or providing insights.</p>
+                </div>
+                <div class="p-8 glass-card border-l-4 border-l-red-400">
+                    <h4 class="font-bold text-slate-800 mb-3 uppercase text-sm">AI Confusion</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Businesses want to adopt AI but have no practical roadmap for implementation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">03</div>
+    </section>
+
+    <!-- 04 BRAND IDENTITY -->
+    <section id="p4" class="section-container bg-white">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker">Brand Identity</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase">Modern. Local. Human.</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-lg"><i data-lucide="zap"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 uppercase text-sm">Intelligent</h4>
+                            <p class="text-sm text-slate-500">Strong expertise in systems and AI agents.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 rounded-2xl bg-cyan-500 text-white flex items-center justify-center shrink-0 shadow-lg"><i data-lucide="smile"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 uppercase text-sm">Friendly</h4>
+                            <p class="text-sm text-slate-500">Easy to communicate with for non-technical businesses.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-800 text-white flex items-center justify-center shrink-0 shadow-lg"><i data-lucide="target"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 uppercase text-sm">Results-Oriented</h4>
+                            <p class="text-sm text-slate-500">Focus on real business outcomes and cost savings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900 text-white p-12 rounded-[3rem] text-center shadow-2xl">
+                    <p class="text-sm font-bold tracking-widest text-blue-400 mb-4 uppercase">Tagline</p>
+                    <p class="text-3xl font-light italic">"Smarter Operations for Modern Businesses"</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">04</div>
+    </section>
+
+    <!-- 05 BPI CORE -->
+    <section id="p5" class="section-container bg-slate-50">
+        <div class="max-w-6xl mx-auto w-full">
+            <span class="kicker">Core Service A</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 uppercase">Process Improvement</h2>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <i data-lucide="map" class="text-blue-500 mb-4 mx-auto w-8 h-8"></i>
+                    <h5 class="font-bold text-xs uppercase mb-2">Process Mapping</h5>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <i data-lucide="file-text" class="text-blue-500 mb-4 mx-auto w-8 h-8"></i>
+                    <h5 class="font-bold text-xs uppercase mb-2">SOP Creation</h5>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <i data-lucide="refresh-cw" class="text-blue-500 mb-4 mx-auto w-8 h-8"></i>
+                    <h5 class="font-bold text-xs uppercase mb-2">Workflow Redesign</h5>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <i data-lucide="search" class="text-blue-500 mb-4 mx-auto w-8 h-8"></i>
+                    <h5 class="font-bold text-xs uppercase mb-2">Gap Analysis</h5>
+                </div>
+            </div>
+            <p class="mt-8 text-slate-400 italic text-[10px] uppercase font-bold tracking-wider">Tools: Miro, Lucidchart, Notion, Confluence.</p>
+        </div>
+        <div class="page-number">05</div>
+    </section>
+
+    <!-- 06 AUTOMATION -->
+    <section id="p6" class="section-container bg-white">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="kicker">Core Service B</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 uppercase">No-Code <br/><span class="text-blue-600">Automation</span></h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        We eliminate repetitive tasks using world-class automation platforms, allowing your team to focus on high-value work.
+                    </p>
+                    <div class="flex gap-4">
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg font-bold text-xs">Zapier</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg font-bold text-xs">Make.com</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg font-bold text-xs">n8n</span>
+                        <span class="px-4 py-2 bg-slate-100 rounded-lg font-bold text-xs">Apps Script</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-blue-50 rounded-3xl text-center">
+                        <i data-lucide="user-plus" class="mx-auto mb-3 text-blue-600 w-6 h-6"></i>
+                        <p class="text-[10px] font-black uppercase text-slate-400">HR</p>
+                        <p class="text-xs font-bold uppercase">Leave Approval</p>
+                    </div>
+                    <div class="p-6 bg-emerald-50 rounded-3xl text-center">
+                        <i data-lucide="receipt" class="mx-auto mb-3 text-emerald-600 w-6 h-6"></i>
+                        <p class="text-[10px] font-black uppercase text-slate-400">Finance</p>
+                        <p class="text-xs font-bold uppercase">Invoice Processing</p>
+                    </div>
+                    <div class="p-6 bg-orange-50 rounded-3xl text-center">
+                        <i data-lucide="shopping-cart" class="mx-auto mb-3 text-orange-600 w-6 h-6"></i>
+                        <p class="text-[10px] font-black uppercase text-slate-400">Retail</p>
+                        <p class="text-xs font-bold uppercase">Inventory Sync</p>
+                    </div>
+                    <div class="p-6 bg-purple-50 rounded-3xl text-center">
+                        <i data-lucide="calendar" class="mx-auto mb-3 text-purple-600 w-6 h-6"></i>
+                        <p class="text-[10px] font-black uppercase text-slate-400">Healthcare</p>
+                        <p class="text-xs font-bold uppercase">Smart Reminders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">06</div>
+    </section>
+
+    <!-- 07 DATA & DASHBOARDS -->
+    <section id="p7" class="section-container bg-slate-50">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="text-center mb-12">
+                <span class="kicker text-center">Core Service C</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 uppercase">Data Intelligence</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">Transforming raw spreadsheets into real-time decision-making dashboards.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Compact Graph Container -->
+                <div class="glass-card p-8 bg-white overflow-hidden">
+                    <div class="flex items-center justify-between mb-6">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Efficiency Benchmarks</p>
+                        <div class="flex gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            <span class="w-2 h-2 rounded-full bg-slate-200"></span>
+                        </div>
+                    </div>
+                    <div class="h-48 md:h-64">
+                        <canvas id="dashboardPreview"></canvas>
+                    </div>
+                </div>
+
+                <!-- Deliverables List -->
+                <div class="space-y-4">
+                    <div class="p-6 bg-white rounded-2xl border border-slate-100 flex items-center gap-6 shadow-sm group hover:border-blue-400 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                            <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm uppercase">Sales Analytics</h4>
+                            <p class="text-xs text-slate-500">Revenue tracking & conversion funnels.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl border border-slate-100 flex items-center gap-6 shadow-sm group hover:border-blue-400 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center shrink-0">
+                            <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm uppercase">Financial KPIs</h4>
+                            <p class="text-xs text-slate-500">Profit margins & cash flow monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl border border-slate-100 flex items-center gap-6 shadow-sm group hover:border-blue-400 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm uppercase">Ops Dashboards</h4>
+                            <p class="text-xs text-slate-500">Internal performance & workflow health.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl border border-slate-100 flex items-center gap-6 shadow-sm group hover:border-blue-400 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm uppercase">Real-time Reporting</h4>
+                            <p class="text-xs text-slate-500">Automated daily/weekly executive summaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">07</div>
+    </section>
+
+    <!-- 08 AI & AGENTS -->
+    <section id="p8" class="section-container bg-white">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker">Core Service D</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase">AI <span class="text-blue-600">Implementation</span></h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-200">
+                        <h4 class="font-bold text-xl text-slate-900 mb-4 flex items-center gap-3 uppercase text-sm">
+                            <i data-lucide="bot" class="text-blue-600"></i> AI Internal Assistant
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            A private chatbot trained on your company's SOPs and HR policies. Find any information instantly without asking a manager.
+                        </p>
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-200">
+                        <h4 class="font-bold text-xl text-slate-900 mb-4 flex items-center gap-3 uppercase text-sm">
+                            <i data-lucide="message-square" class="text-blue-600"></i> AI Customer Support
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Smart FAQ bots that handle 80% of customer queries on your website or WhatsApp, escalalting only complex issues to humans.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-2xl font-light italic text-slate-500 leading-relaxed mb-8">
+                        "We don't just use ChatGPT. We build specialized agents that know your business rules."
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="font-bold text-[10px] uppercase bg-slate-900 text-white px-5 py-2 rounded-full tracking-widest">Claude 3.5</span>
+                        <span class="font-bold text-[10px] uppercase bg-slate-900 text-white px-5 py-2 rounded-full tracking-widest">OpenAI</span>
+                        <span class="font-bold text-[10px] uppercase bg-slate-900 text-white px-5 py-2 rounded-full tracking-widest">CrewAI</span>
+                        <span class="font-bold text-[10px] uppercase bg-slate-900 text-white px-5 py-2 rounded-full tracking-widest">LangChain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">08</div>
+    </section>
+
+    <!-- 09 TRAINING & WEBINARS -->
+    <section id="p9" class="section-container bg-slate-50">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker">Knowledge Share</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase">Training & Webinars</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 bg-white rounded-[3rem] shadow-xl border border-slate-100">
+                    <h4 class="text-2xl font-black mb-6 uppercase text-blue-600">Educational Outreach</h4>
+                    <p class="text-slate-600 mb-8 text-sm leading-relaxed">We aim to empower the next generation and current SME workforce through high-impact digital education.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-[10px] font-bold text-slate-700 uppercase tracking-wide">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div> PUBLIC WEBINARS: AI PRODUCTIVITY
+                        </li>
+                        <li class="flex items-center gap-3 text-[10px] font-bold text-slate-700 uppercase tracking-wide">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div> STUDENT WORKSHOPS: DIGITAL OPS
+                        </li>
+                        <li class="flex items-center gap-3 text-[10px] font-bold text-slate-700 uppercase tracking-wide">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div> NO-CODE DASHBOARD BOOTCAMPS
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-600 rounded-[3rem] p-10 text-white flex flex-col justify-center">
+                    <p class="text-4xl font-black mb-4 uppercase">Empowerment</p>
+                    <p class="text-lg font-light leading-relaxed italic">"Building the capability internally is better than just giving a solution. We teach teams how to maintain their own flows."</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">09</div>
+    </section>
+
+    <!-- 10 TARGET MARKET (STRATEGIC PRIORITIES) -->
+    <section id="p10" class="section-container bg-white">
+        <div class="max-w-6xl mx-auto w-full">
+            <span class="kicker">Market Focus</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase text-center md:text-left">Strategic Priorities</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">01. MANUFACTURING</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Inventory tracking, production reporting, and manual Excel dependency reduction.</p>
+                </div>
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">02. LOGISTICS</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Driver coordination, automated status updates, and reporting delay elimination.</p>
+                </div>
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">03. HEALTHCARE</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Clinic appointment management, documentation automation, and patient follow-up.</p>
+                </div>
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">04. EDUCATION CENTERS</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Student management, automated admin scheduling, and parent communication flows.</p>
+                </div>
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">05. GOVT AGENCIES</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Digitalization initiatives, process modernization, and AI awareness programs.</p>
+                </div>
+                <div class="p-8 glass-card">
+                    <h4 class="font-black text-blue-600 mb-4 uppercase text-xs tracking-widest">06. RETAIL & E-COMM</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Auto inventory reporting, sales analytics, and automated customer loyalty systems.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">10</div>
+    </section>
+
+    <!-- 11 GOVT OPPORTUNITIES (FUTURE) -->
+    <section id="p11" class="section-container bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto w-full">
+            <span class="kicker text-blue-400">Strategic Horizon</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 uppercase">Government <br/><span class="text-blue-400">Partnerships</span></h2>
+            <p class="text-xl text-slate-400 font-light mb-12 max-w-2xl leading-relaxed">We aim to align with Malaysia's digitalization vision through key national agencies.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 opacity-60">
+                    <p class="text-[10px] font-black mb-2 text-blue-300 uppercase tracking-widest">Planned Integration</p>
+                    <h4 class="font-bold text-lg mb-2 uppercase">MDEC Ecosystem</h4>
+                    <p class="text-xs text-slate-400">Becoming a digital service provider for national grants.</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 opacity-60">
+                    <p class="text-[10px] font-black mb-2 text-blue-300 uppercase tracking-widest">Planned Integration</p>
+                    <h4 class="font-bold text-lg mb-2 uppercase">SME Corp Grants</h4>
+                    <p class="text-xs text-slate-400">Assisting SMEs in qualifying for digitalization funding.</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 opacity-60">
+                    <p class="text-[10px] font-black mb-2 text-blue-300 uppercase tracking-widest">Planned Integration</p>
+                    <h4 class="font-bold text-lg mb-2 uppercase">MARA Initiatives</h4>
+                    <p class="text-xs text-slate-400">Providing AI awareness for rural business networks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">11</div>
+    </section>
+
+    <!-- 12 TECH STACK (UPDATED: 2 MORE PER CATEGORY) -->
+    <section id="p12" class="section-container bg-white">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="text-center mb-16">
+                <span class="kicker">Engine Room</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 uppercase">Modern Stack</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8 text-center md:text-left">
+                <!-- Collaboration -->
+                <div class="space-y-4">
+                    <p class="text-[10px] font-black uppercase text-blue-500 tracking-tighter">Collaboration</p>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Slack / Notion</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">ClickUp / Jira</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Google Workspace</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Miro / Confluence</div>
+                </div>
+                <!-- Automation -->
+                <div class="space-y-4">
+                    <p class="text-[10px] font-black uppercase text-blue-500 tracking-tighter">Automation</p>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Zapier / Make</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Apps Script</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">n8n / Pipedream</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Airtable Automations</div>
+                </div>
+                <!-- BI & Data -->
+                <div class="space-y-4">
+                    <p class="text-[10px] font-black uppercase text-blue-500 tracking-tighter">BI & Data</p>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Looker Studio</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Power BI</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Tableau / Metabase</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Supabase / BigQuery</div>
+                </div>
+                <!-- AI Dev -->
+                <div class="space-y-4">
+                    <p class="text-[10px] font-black uppercase text-blue-500 tracking-tighter">AI Dev</p>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Vercel AI SDK</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Flowise / LangChain</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">Cursor / Windsurf</div>
+                    <div class="p-4 bg-slate-50 rounded-xl text-[10px] font-bold uppercase">OpenRouter / Pinecone</div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">12</div>
+    </section>
+
+    <!-- 13 PACKAGE 1 -->
+    <section id="p13" class="section-container bg-slate-50">
+        <div class="max-w-4xl mx-auto w-full">
+            <div class="bg-white p-12 rounded-[4rem] shadow-2xl border border-slate-100 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <span class="kicker text-orange-500">Option 01</span>
+                    <h3 class="text-4xl font-extrabold text-slate-900 mb-6 uppercase">SME Starter</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 italic">Perfect for small businesses looking to digitize basic operations.</p>
+                    <div class="text-4xl font-black text-slate-900 mb-2 font-mono tracking-tighter">RM 3k – 8k</div>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Project-based</p>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="p-4 bg-orange-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-orange-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Process Mapping
+                    </div>
+                    <div class="p-4 bg-orange-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-orange-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Workflow Review
+                    </div>
+                    <div class="p-4 bg-orange-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-orange-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Basic Automation
+                    </div>
+                    <div class="p-4 bg-orange-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-orange-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Simple Dashboard
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">13</div>
+    </section>
+
+    <!-- 14 PACKAGE 2 -->
+    <section id="p14" class="section-container bg-white">
+        <div class="max-w-4xl mx-auto w-full">
+            <div class="bg-slate-900 p-12 rounded-[4rem] shadow-2xl text-white flex flex-col md:flex-row gap-12 items-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-12">
+                    <i data-lucide="sparkles" class="w-12 h-12 text-blue-400 opacity-20"></i>
+                </div>
+                <div class="md:w-1/2">
+                    <span class="kicker text-blue-400">Option 02</span>
+                    <h3 class="text-4xl font-extrabold text-white mb-6 uppercase">Smart Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8 italic">The comprehensive redesign for growing SMEs ready to scale.</p>
+                    <div class="text-4xl font-black text-blue-400 mb-2 font-mono tracking-tighter">RM 10k – 30k</div>
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Implementation Focused</p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-1 gap-3">
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> Full Process Redesign
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> Full Automation Suite
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> Custom Dashboard System
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> Complete Documentation
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> Comprehensive Staff Training
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> API & CRM Integration
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase border border-blue-500/30 bg-blue-500/5">
+                        <i data-lucide="check-circle" class="text-blue-400 shrink-0"></i> 90-Day Priority Support
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">14</div>
+    </section>
+
+    <!-- 15 PACKAGE 3 -->
+    <section id="p15" class="section-container bg-slate-50">
+        <div class="max-w-4xl mx-auto w-full">
+            <div class="bg-white p-12 rounded-[4rem] shadow-2xl border border-slate-100 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <span class="kicker text-purple-600">Option 03</span>
+                    <h3 class="text-4xl font-extrabold text-slate-900 mb-6 uppercase">AI Transformation</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 italic">The ultimate AI-first enterprise overhaul.</p>
+                    <div class="text-4xl font-black text-slate-900 mb-2 font-mono tracking-tighter">RM 30k – 100k+</div>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Enterprise Tier</p>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <div class="p-4 bg-purple-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-purple-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Custom AI Assistant
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-purple-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> AI Internal Knowledge Base
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-purple-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Advanced Data Analytics
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-2xl flex items-center gap-3 text-[10px] font-bold uppercase text-purple-800">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> AI Governance & Ethics
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">15</div>
+    </section>
+
+    <!-- 16 COMPETITIVE ADVANTAGE -->
+    <section id="p16" class="section-container bg-white">
+        <div class="max-w-5xl mx-auto w-full text-center">
+            <span class="kicker text-center">Why FlowCraft</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-12 uppercase leading-tight">Transformation Partner, <br/><span class="text-blue-600">Not Just Developers</span></h2>
+            <div class="flex flex-col md:flex-row gap-12 justify-center items-center">
+                <div class="md:text-right">
+                    <p class="label-gray text-[10px] font-black text-slate-300 mb-4 tracking-widest uppercase">Other Agencies</p>
+                    <p class="text-lg font-bold text-slate-400 line-through mb-2">Cheap Website Dev</p>
+                    <p class="text-lg font-bold text-slate-400 line-through mb-2">Generic IT Support</p>
+                    <p class="text-lg font-bold text-slate-400 line-through">Standard Software Sales</p>
+                </div>
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-black shadow-xl">VS</div>
+                <div class="md:text-left">
+                    <p class="label-gray text-[10px] font-black text-blue-500 mb-4 tracking-widest uppercase">FlowCraft Advantage</p>
+                    <p class="text-xl font-extrabold text-slate-900 mb-2">Digital Ops Transformation</p>
+                    <p class="text-xl font-extrabold text-slate-900 mb-2">Process-First Automation</p>
+                    <p class="text-xl font-extrabold text-slate-900">AI Practical Enablement</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">16</div>
+    </section>
+
+    <!-- 17 CTA -->
+    <section id="p17" class="section-container bg-slate-900 text-white relative">
+        <div class="max-w-4xl mx-auto w-full text-center relative z-10 px-4">
+            <span class="kicker text-blue-400">Next Steps</span>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-10 leading-tight uppercase tracking-tighter">Let's Craft <br/>Your <span class="text-blue-400 italic">Flow</span></h2>
+            <p class="text-xl text-slate-400 mb-12 font-light">Join the future of Malaysian SME operations.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:hello@flowcraft.my" class="px-10 py-5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all text-xs uppercase tracking-widest">Get Free Assessment</a>
+                <a href="#p1" class="px-10 py-5 border border-slate-700 rounded-full font-bold hover:bg-white hover:text-slate-900 transition-all text-xs uppercase tracking-widest">Back to Start</a>
+            </div>
+            
+            <div class="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center opacity-50">
+                <div class="text-left mb-6 md:mb-0">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-blue-400">FlowCraft Consulting</p>
+                    <p class="text-[9px] uppercase tracking-wide">Kuala Lumpur, Malaysia</p>
+                </div>
+                <div class="flex gap-6">
+                    <i data-lucide="globe" class="w-5 h-5 cursor-pointer hover:text-blue-400 transition-colors"></i>
+                    <i data-lucide="linkedin" class="w-5 h-5 cursor-pointer hover:text-blue-400 transition-colors"></i>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">17</div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+
+        // Chart implementation for Data Intelligence Section
+        window.onload = function() {
+            const ctx = document.getElementById('dashboardPreview').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Efficiency Gain (%)',
+                        data: [12, 25, 42, 60, 82, 95],
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.05)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#3b82f6',
+                        pointBorderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { 
+                            display: true, 
+                            grid: { color: '#f8fafc' },
+                            ticks: { font: { size: 9 }, color: '#94a3b8' }
+                        },
+                        x: { 
+                            grid: { display: false }, 
+                            ticks: { font: { family: 'Inter', size: 9 }, color: '#94a3b8' } 
+                        }
+                    }
+                }
+            });
+        };
+    </script>
+</body>
+</html>
